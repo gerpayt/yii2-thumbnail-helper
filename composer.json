@@ -1,0 +1,26 @@
+{
+    "name": "gerpayt/yii2-thumbnail-helper",
+    "description": "The thumbnail generator for the Yii framework",
+    "keywords": ["yii2", "image", "thumbnail"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/gerpayt/yii2-thumbnail-helper/issues",
+        "source": "https://github.com/gerpayt/yii2-thumbnail-helper"
+    },
+    "authors": [
+        {
+            "name": "Chen Feng",
+            "email": "gerpayt@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "imagine/imagine": "0.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "gerpayt\\yii2_thumbnail_helper\\": ""
+        }
+    }
+}
