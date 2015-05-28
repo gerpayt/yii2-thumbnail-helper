@@ -4,13 +4,8 @@ namespace gerpayt\yii2_thumbnail_helper;
 use Yii;
 use Imagine\Image\Box;
 use Imagine\Image\Color;
-use Imagine\Image\ImageInterface;
-use Imagine\Image\ImagineInterface;
 use Imagine\Image\ManipulatorInterface;
 use Imagine\Image\Point;
-use yii\base\InvalidConfigException;
-use yii\base\InvalidParamException;
-use yii\helpers\ArrayHelper;
 use yii\imagine\BaseImage;
 
 class Thumbnail extends BaseImage
@@ -41,6 +36,7 @@ class Thumbnail extends BaseImage
         $thumb = static::getImagine()->create($box, new Color('FFF', 100));
 
         // calculate points
+        /** @var $img \Imagine\Image\ImageInterface */
         $size = $img->getSize();
 
         $startX = 0;
